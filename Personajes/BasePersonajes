@@ -31,8 +31,6 @@ abstract BasePersonajes {
     }
 
     public void rebreDany(int daño) {
-        int vida = getPuntsVida();
-
-        
+        setPuntsVida(getPuntsVida() - daño);
     }
 }
