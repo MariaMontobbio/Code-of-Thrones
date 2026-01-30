@@ -12,5 +12,9 @@ public class Guerrer extends BasePersonajes {
     public int getResistencia() {
         return resistencia;
     }
-    protected void
+    protected void setResistencia(int r) {
+        this.resistencia = r;
+    }
+
+    
 }
