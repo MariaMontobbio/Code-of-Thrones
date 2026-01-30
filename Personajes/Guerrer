@@ -1,3 +1,5 @@
+package Personajes;
+
 public class Guerrer extends BasePersonajes {
 
     private int resistencia;
@@ -16,5 +18,5 @@ public class Guerrer extends BasePersonajes {
         this.resistencia = r;
     }
 
-    
+
 }
