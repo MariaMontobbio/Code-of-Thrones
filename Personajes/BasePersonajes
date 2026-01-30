@@ -1,4 +1,4 @@
-abstract BasePersonajes {
+abstract class BasePersonajes {
     protected String nom;
     protected int nivell;
     protected int puntsVida;
@@ -31,6 +31,13 @@ abstract BasePersonajes {
     }
 
     public void rebreDany(int daño) {
+        
+        if(nom.equals("Guerrer")) daño = daño - getResistencia();
+
         setPuntsVida(getPuntsVida() - daño);
+    }
+
+    public int atacar() {
+        return daño;
     }
 }
