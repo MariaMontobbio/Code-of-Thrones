@@ -1,0 +1,16 @@
+public class Guerrer extends BasePersonajes {
+
+    private int resistencia;
+
+    public Guerrer(int nivell, int puntsVida, int resistencia) {
+        super(nivell, puntsVida);
+        this.resistencia = resistencia;
+    }
+
+    setNom("Guerrer");
+
+    public int getResistencia() {
+        return resistencia;
+    }
+    protected void
+}
