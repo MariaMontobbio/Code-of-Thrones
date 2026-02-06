@@ -1,0 +1,43 @@
+package Personajes;
+
+public abstract class BasePersonajes {
+    protected String nom;
+    protected int nivell;
+    protected int puntsVida;
+
+    protected BasePersonajes(String nom, int nivell, int puntsVida) {
+        this.nom = nom;
+        this.nivell = nivell;
+        this.puntsVida = puntsVida;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+    protected void setNom(String n) {
+        this.nom = n;
+    }
+
+    public int getNivell () {
+        return nivell;
+    }
+    protected void setNivell(int n) {
+        this.nivell = n;
+    }
+
+    public int getPuntsVida() {
+        return puntsVida;
+    }
+    protected void setPuntsVida(int v) {
+        this.puntsVida = v;
+    }
+
+    public void rebreDany(int daño) {
+
+        setPuntsVida(getPuntsVida() - daño);
+    }
+
+    public int atacar() {
+        return daño;
+    }
+}

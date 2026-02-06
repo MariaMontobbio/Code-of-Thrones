@@ -4,19 +4,15 @@ import Personajes.*;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Bienvenido a Code of Thrones\n");
+        BasePersonajes p1;
+        BasePersonajes p2;
 
         int num_jugadores = NumJugadores();
 
         switch (EscogerPersonaje(1)) {
-            case 1:
-                Guerrer p1 = new Guerrer("HENRY", 20, 100, 15);
-                break;
-            case 2:
-                Mag p1 = new Mag("HENRY", 10, 100, 500);
-                break;
-            case 3:
-                Monstre p1 = new Monstre("HENRY", 5, 100);
-                break;
+            case 1 -> p1 = new Guerrer("HENRY", 20, 100, 15);
+            case 2 -> p1 = new Mag("HENRY", 10, 100, 500);
+            case 3 -> p1 = new Monstre("HENRY", 5, 100);
         }
 
         int pers_p2;
@@ -25,15 +21,9 @@ public class Main {
         else pers_p2 = EscogerPersonaje(2);
 
         switch (pers_p2) {
-            case 1:
-                Guerrer p2 = new Guerrer("HENRY", 20, 100, 15);
-                break;
-            case 2:
-                Mag p2 = new Mag("HENRY", 10, 100, 500);
-                break;
-            case 3:
-                Monstre p2 = new Monstre("HENRY", 5, 100);
-                break;
+            case 1 -> p2 = new Guerrer("HENRY", 20, 100, 15);
+            case 2 -> p2 = new Mag("HENRY", 10, 100, 500);
+            case 3 -> p2 = new Monstre("HENRY", 5, 100);
         }
 
     }
